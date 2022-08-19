@@ -8,6 +8,7 @@ const CellWrapper = styled.button`
 	cursor: pointer;
 	outline: none;
 `;
+
 export type CellValue = 'x' | 'o' | undefined;
 
 type CellProps = {

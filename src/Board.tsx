@@ -12,13 +12,14 @@ const BoardWrapper = styled.div`
 	column-gap: 6px;
 	row-gap: 6px;
 `;
+
 export type Winner = CellValue | 'tie';
 
 // prettier-ignore
 const winningConditions = [
-    [0, 1, 2], [3, 4, 5], [6, 7, 8], // Horizontal
-    [0, 3, 6], [1, 4, 7], [2, 5, 8], // Vertical
-    [0, 4, 8], [2, 4, 6] // Diagonal
+  [0,1,2], [3,4,5], [6,7,8], // Horizontal
+  [0,3,6], [1,4,7], [2,5,8], // Vertical
+  [0,4,8], [2,4,6] // Diagonal
 ]
 
 type BoardProps = {
@@ -50,8 +51,9 @@ export const Board: FC<BoardProps> = ({ onGameEnd }) => {
 	}, [winningShape, tie, onGameEnd]);
 
 	const toggleCell = (index: number) => {
-		setCells(cs => cs.map((c, i) => (i === index ? currentShape : c)));
+		setCells(cells => cells.map((c, i) => (i === index ? currentShape : c)));
 	};
+
 	return (
 		<BoardWrapper>
 			{cells.map((cell, i) => (

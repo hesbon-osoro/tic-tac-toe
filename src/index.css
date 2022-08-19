@@ -7,7 +7,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	background: linear-gradient(
 		41deg,
-		rgba(36, 9, 158, 1) 0%,
+		rgba(26, 89, 158, 1) 0%,
 		rgba(70, 143, 224, 1) 42%,
 		rgba(99, 166, 241, 1) 100%
 	);
@@ -25,6 +25,7 @@ body,
 	align-items: center;
 	justify-content: center;
 }
+
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;

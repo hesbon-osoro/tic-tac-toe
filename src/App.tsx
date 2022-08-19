@@ -11,10 +11,7 @@ const variants = {
 		scale: 1,
 		width: '500px',
 		height: '500px',
-		transition: {
-			type: 'spring',
-			duration: 0.8,
-		},
+		transition: { type: 'spring', duration: 0.8 },
 	},
 	start: {
 		opacity: 1,
@@ -56,8 +53,8 @@ function App() {
 		setGameState('game');
 	};
 
-	const onGameEnd = (winer: Winner) => {
-		setWinner(winer);
+	const onGameEnd = (winner: Winner) => {
+		setWinner(winner);
 		setGameState('reset');
 	};
 
